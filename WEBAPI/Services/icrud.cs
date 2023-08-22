@@ -11,5 +11,6 @@ namespace WEBAPI.Services
         DataTable SyncData();
 
         List<Diary> GetAllRecords();
+        bool DeleteRecords(int ID);
     }
 }

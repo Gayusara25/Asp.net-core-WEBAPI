@@ -42,5 +42,16 @@ namespace WEBAPI.Controllers
           
             return Ok(diary);
         }
+
+        [HttpDelete]
+        public IActionResult Remove(int BookID)
+        {
+            bool k = _icrud.DeleteRecords(BookID);
+            if (k)
+            {
+                return Ok(k);
+            }
+            return NoContent();
+        }
     }
 }
