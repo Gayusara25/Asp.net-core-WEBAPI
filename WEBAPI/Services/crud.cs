@@ -5,7 +5,7 @@ using System.Data;
 using WEBAPI.Models;
 using WEBAPI.Services;
 
-namespace HangFireDemo.crud
+namespace WEBAPI.Services
 {
     public class crud : icrud
     {
